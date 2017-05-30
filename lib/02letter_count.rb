@@ -12,8 +12,7 @@ def letter_count(word)
     word.each_char{ |c|
       # puts c
       if !letters[:"#{c}"]
-        letters[:"#{c}"] =0
-        letters[:"#{c}"] +=1
+        letters[:"#{c}"] = 1
       elsif letters[:"#{c}"]
         letters[:"#{c}"] += 1
       end
