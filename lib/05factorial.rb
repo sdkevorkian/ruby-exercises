@@ -9,3 +9,14 @@
 #
 # > 120
 #
+
+def factorial(num)
+    x = num - 1
+    until x == 0 do
+      num *= x
+      x -= 1
+    end
+    puts num
+end
+
+factorial(5)

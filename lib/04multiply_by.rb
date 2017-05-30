@@ -9,3 +9,12 @@
 # > 5
 # > 10
 # > 15
+
+def multiply_by(numbers, multiplier)
+    numbers = numbers.map do |num|
+      num * multiplier
+    end
+    puts numbers
+end
+
+multiply_by([1, 2, 3, 4], 5)
